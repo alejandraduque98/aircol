@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Monserrat;
+    src: url(../src/fonts/monserrat/Montserrat-VariableFont_wght.ttf);
+}
+/*@font-face {
+    font-family: Monserrat;
+    src: url(../src/fonts/monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}*/
+
+:root{
+    --Title-h1-Color:#FFFF;
+    --Title-h2-Color:#FFFF;
+    --Input-Light-Color:#2A2929;
+    --Input-Dark-Color:#FFFF;
+    --Btn-Color:#FFFF;
+    --Links-Color:#FFFF;
+    --Modal-Color:#FFFF;
+    --Text-Color:#2A2929;
+    font-size: 20px;
+}
+
+/*2- Tpografia Global Body*/
+
+body{
+    font-family: 'Monserrat';
+    /*tamaño de fuente root * 1*/
+    font-size: 1rem;
+    color:var(--Text-Color);
+    line-height: 20px;
+}
+
+/*3- encabezados o parrafos*/
+h1{
+    font-family: 'Monserrat'; 
+    font-size: 10rem;
+    font-weight:bold;
+    color: var(--Title-h1-Color);
+    line-height: 183px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-family: 'Monserrat'; 
+    font-size: 3rem;
+    font-weight:600;
+    color: var(--Title-h2-Color);
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+p{
+    font-family: 'Monserrat';
+    /*tamaño de fuente root * 1*/
+    font-size: 1rem;
+    color:var(--Text-Color);
+    line-height: 20px;
+}
+
+a{
+    font-size: 1rem;
+    color: var(--Links-Color);
+    text-decoration: none;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+}
+
+/*Responsive*/
+
+/* Pantallas grandes */
+@media (min-width: 1500px) {
+
+    :root{
+
+        font-size: 40px;
+        --Title-h2-Color: #5341f2;
+    }
+    body{
+        line-height: 40px;
+    }
+
+    /*3- encabezados o parrafos*/
+    h1{
+        font-size: 10rem;
+    }
+
+    h2{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    p{
+        /*tamaño de fuente root * 1*/
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+
+    a{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+   
+}
+
+
+/*tablets y laptops*/
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* Estilos para pantallas medianas */
+    :root{
+
+        font-size: 14px;
+        --Title-h2-Color: #F29441;
+    }
+
+    /*3- encabezados o parrafos*/
+    h1{
+        font-family: 'Monserrat'; 
+        font-size: 10rem;
+        font-weight:bold;
+        color: var(--Title-h1-Color);
+        line-height: 183px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-family: 'Monserrat'; 
+        font-size: 3rem;
+        font-weight:600;
+        color: var(--Title-h2-Color);
+        line-height: 44px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-family: 'Monserrat';
+        /*tamaño de fuente root * 1*/
+        font-size: 1.2rem;
+        color:var(--Text-Color);
+        line-height: 20px;
+    }
+
+    a{
+        font-size: 1.5rem;
+        color: var(--Links-Color);
+        text-decoration: none;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+/*Pantallas Mobile medium*/
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    
+    :root{
+        font-size: 14px;
+        --Title-h2-Color:#4bb1be;
+
+    }
+
+    h1{
+        font-size: 5rem;
+        line-height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 3rem;
+        line-height: 44px;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 20px;
+    } 
+
+    a{
+        font-size: 1.3rem;
+        line-height: 15px;
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+/*pantallas Mobile small*/
+@media (max-width: 480px) {
+    /* Estilos para pantallas extra pequeñas */
+    
+    :root{
+        font-size: 14px;
+        --Title-h2-Color: #D93E30;
+    }
+
+    h1{
+        font-size: 4rem;
+        line-height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 3rem;
+        line-height: 44px;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 15px;
+    } 
+
+    a{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+}

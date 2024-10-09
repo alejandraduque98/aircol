@@ -1,0 +1,17 @@
+/*Responsive*/
+
+/*tablets y laptops*/
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* Estilos para pantallas medianas */
+
+}
+
+/*Pantallas Mobile medium*/
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+}
+
+/*pantallas Mobile small*/
+@media (max-width: 480px) {
+    /* Estilos para pantallas extra pequeñas */
+}

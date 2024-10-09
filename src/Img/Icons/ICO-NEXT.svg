@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="53.863" viewBox="0 0 46 53.863">
+  <defs>
+    <filter id="Next" x="0" y="0" width="46" height="53.863" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="ICO-NEXT" transform="translate(0.666 1.648)">
+    <g transform="matrix(1, 0, 0, 1, -0.67, -1.65)" filter="url(#Next)">
+      <path id="Next-2" data-name="Next" d="M0,0,20.834,13.458,0,27.55" transform="translate(13.17 10.15)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+    </g>
+    <rect id="Envolvente-Next" width="45" height="45" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,152 @@
+/*4- Colores y variables globales*/
+:root{
+    --Buttons-Color:#D93E30;
+    --Buttons-Warning:#F29441;
+    --Buttons-Error:#F8200D;
+    --Icons-Light-Color:#D93E30;
+    --Icons-Darks-Color:#FFFF;
+    --Hover-Uno:#F29441;
+    --Hover-Dos:#4bb1be;
+    --Hover-Tres:#D93E30;
+    --Background-Navbar:rgba(10,10,10,0.78);
+    --Background-Form-Dark:rgba(10,10,10,0.78);
+    --Background-Form-light:rgba(17,14,14,0.28);
+    --Background-Input-Dark:rgba(9,9,9,0.80);
+    --Background-Form:url(../src/Img/Fondo3.jpg);
+    --Background-Dash-P:url(../Img/fondoDash.jpg);
+
+
+    --spacing-small: 60px;
+    --spacing-medium: 80px;
+    --spacing-large: 91px;
+
+    --Background-Height:100vh;
+    --Bacground-Width:100%;
+
+    --Box-Shadow:-2px 10px 18px 1px rgba(0,0,0,0.46);;
+
+}
+
+
+/*5- Estilos generales Enlaces y Bootnes*/
+
+.btn-L{
+    height: 50px;
+    width: 398;
+    background-color: var(--Buttons-Color);
+    align-items: center;
+    border-radius: 50px;
+    border:none;
+    box-shadow: var(--Box-Shadow);
+}
+
+.btn__text {
+    color: var(--Btn-Color);
+
+}
+
+
+.btn-M{
+    height: 60px;
+    width: 255px;
+    background-color: var(--Buttons-Color);
+    border-radius: 50px;
+    border:none;
+    box-shadow: var(--Box-Shadow);
+}
+
+.btn-s{
+    height: 50px;
+    width: 152px;
+    background-color: var(--Buttons-Color);
+    border-radius: 50px;
+    border:none;
+    box-shadow: var(--Box-Shadow);
+}
+
+/*6- Diseño de contenedores y secciones*/
+body{
+    margin: 0;
+    height: 100vh;
+    
+    background:var(--Background-Form);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.BackdropFilter{
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(15px);
+    backdrop-filter: brightness(65%);
+}
+
+.container{
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.contanerLight{
+    height: 60vh;
+    width: 80vw;
+    background: rgba(255, 255, 255, 0.45);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.layoutRegister{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.logo{
+    background-color: #D93E30;
+}
+.content{
+    background-color: #4bb1be;
+}
+
+/*Responsive*/
+
+/* Pantallas grandes */
+@media (min-width: 1500px) {
+
+}
+
+/*tablets y laptops*/
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* Estilos para pantallas medianas */
+
+}
+
+/*Pantallas Mobile medium*/
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .layoutRegister{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .layoutRegister .content{
+        grid-row-start:1;
+        grid-row-end:-1;
+    }
+}
+
+/*pantallas Mobile small*/
+@media (max-width: 480px) {
+    /* Estilos para pantallas extra pequeñas */
+    .layoutRegister{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .layoutRegister .content{
+        grid-row-start:1;
+        grid-row-end:-1;
+    }
+}
