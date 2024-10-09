@@ -1,7 +1,7 @@
 nav{
     height: 80px;
     width: 100%;
-    padding: 35px 0;
+    padding: 35px 20px;
     background-color: var(--Background-Navbar);
     display: flex;
     justify-content: flex-end;
@@ -57,6 +57,25 @@ ul li a{
 }
 
 
+/* Pantallas grandes */
+@media (min-width: 1500px) {
+
+    nav{
+        height: 200px;
+        padding-right: 20px;
+    }
+}
+
+/*tablets y laptops*/
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* Estilos para pantallas medianas */
+    nav{
+        height: 50px;
+        padding-right: 20px;
+    }
+
+}
+
 /*Pantallas Mobile medium*/
 @media (max-width: 768px) {
     .abrirMenu{
@@ -107,5 +126,58 @@ ul li a{
         display: block;
     }
 
+
+}
+
+/*pantallas Mobile small*/
+@media (max-width: 480px) {
+    /* Estilos para pantallas extra pequeñas */
+    .abrirMenu{
+        display: block;
+        position: absolute;
+        background: transparent;
+        top:0;
+        z-index: 10;
+        border: 0;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        padding-top: 90px;
+        top:0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--Background-Navbar);
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        animation: navbarOpen  .8s  ease;
+    }
+
+    @keyframes navbarOpen {
+
+        from{
+            transform: translateY(-200%);
+        }
+
+        to{
+            transform: translateY(0);
+        }
+        
+    }
+
+    .open {
+        display: block;
+    }
 
 }
