@@ -26,6 +26,7 @@ const Navbar = () => {
                         Login
                     </NavLink>
                 </li>
+                
                 <li>
                     <NavLink 
                             to="/SignUp"
