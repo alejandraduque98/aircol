@@ -61,10 +61,11 @@ ul li a{
 @media (min-width: 1500px) {
 
     nav{
-        height: 200px;
         padding-right: 20px;
     }
 }
+
+/*Laptop L 1440*/
 
 /*tablets y laptops*/
 @media (max-width: 1199px) and (min-width: 768px) {
@@ -78,6 +79,10 @@ ul li a{
 
 /*Pantallas Mobile medium*/
 @media (max-width: 768px) {
+    
+    nav{
+        padding: 0px 20px;
+    }
     .abrirMenu{
         display: block;
         position: absolute;
@@ -132,6 +137,10 @@ ul li a{
 /*pantallas Mobile small*/
 @media (max-width: 480px) {
     /* Estilos para pantallas extra pequeñas */
+    nav{
+        padding: 0px 20px;
+    }
+    
     .abrirMenu{
         display: block;
         position: absolute;

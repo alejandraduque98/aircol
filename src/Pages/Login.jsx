@@ -1,12 +1,14 @@
 import styles from '../styles/login.module.css'
+import FondoInferior from "../Img/FondoInferior.png"
 
 const Login = () => {
     return(
         <div className='container'>
-            <div className='contanerLight'>
+            <div className={`contanerLight ${styles.contanerLightSignUp}`}>
                 <div className="layoutRegister">
                     <div className="logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident esse quos deserunt iure similique qui nesciunt ex sint repudiandae sed, eius nobis repellat est saepe in beatae rem facilis.</p>
+
+                        <img className={styles.FondoInferior} src={FondoInferior} alt=""/>
 
                     </div>
                     <div className={styles.content}>
