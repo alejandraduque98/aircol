@@ -61,6 +61,10 @@
     box-shadow: var(--Box-Shadow);
 }
 
+.btn-M:active{
+    transform: scale(0.9);
+}
+
 .btn-s{
     height: 50px;
     width: 152px;
@@ -114,35 +118,142 @@ body{
 }
 
 .logo{
-    background-color: #D93E30;
 }
-.content{
-    background-color: #4bb1be;
-}
+
+
 
 /*Responsive*/
 
 /* Pantallas grandes */
 @media (min-width: 1500px) {
+    .layoutRegister{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .contanerLight {
+        height: 70vh;
+        width: 80vw;
+        border-radius: 100px;
+        top: 90px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+    
+
+    .btn-M{
+        height: 100px;
+        width: 33vw;
+        padding: 10px;
+        font-family: 'monserrat';
+        font-size: 1rem;
+        font-weight:500;
+    }
+
+    
+
+}
+
+/*Laptop L 1440*/
+@media(max-width: 1440px) and (min-width: 1200px) {
+    .layoutRegister{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 40px ;
+        ;
+    }
+    
+
+    .contanerLight {
+        height: 70vh;
+        width: 80vw;
+        border-radius: 100px;
+        top: 90px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+    
+
+    .btn-M{
+        height: 100px;
+        width: 33vw;
+        padding: 17px;
+        font-family: 'monserrat';
+        font-size: 1rem;
+        font-weight:500;
+    }
 
 }
 
 /*tablets y laptops*/
 @media (max-width: 1199px) and (min-width: 768px) {
     /* Estilos para pantallas medianas */
+    /* Estilos para pantallas extra pequeñas */
+    .layoutRegister{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .contanerLight {
+        height: 60vh;
+        width: 100vw;
+        border-radius: 0px;
+        top: 90px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+    
+
+    .btn-M{
+        height: 60px;
+        width: 50vw;
+        padding: 10px;
+        font-family: 'monserrat';
+        font-size: 1.5rem;
+        font-weight:500;
+    }
 
 }
 
 /*Pantallas Mobile medium*/
 @media (max-width: 768px) {
-    /* Estilos para pantallas pequeñas */
-    .layoutRegister{
-        grid-template-columns: 1fr; 
+     /* Estilos para pantallas extra pequeñas */
+     .layoutRegister{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
     }
-    .layoutRegister {
-        grid-row-start:1;
-        grid-row-end:-1;
+
+    .contanerLight {
+        height: 60vh;
+        width: 100vw;
+        border-radius: 0px;
+        top: 90px;
     }
+
+    .container{
+        flex-wrap: wrap;
+    }
+    
+
+    .btn-M{
+        height: 60px;
+        width: 50vw;
+        padding: 10px;
+        font-family: 'monserrat';
+        font-size: 1.5rem;
+        font-weight:500;
+    }
+    
 }
 
 /*pantallas Mobile small*/
@@ -152,23 +263,23 @@ body{
         grid-template-columns: 1fr; 
         gap: 2rem;
     }
-    .layoutRegister{
-        grid-row-start:1;
-        grid-row-end:-1;
-    }
 
     .content{
         width: 100vw;
         grid-row-start: 1;
     }
+
     .logo{
         grid-row-start: 2;
     }
+
     .contanerLight {
         height: 70vh;
         width: 100vw;
         border-radius: 0px;
+        top: 8px;
     }
+
     .container{
         flex-wrap: wrap;
     }
@@ -176,7 +287,7 @@ body{
 
     .btn-M{
         height: 60px;
-        width: 90vw;
+        width: 100vw;
         padding: 10px;
         font-family: 'monserrat';
         font-size: 1.5rem;

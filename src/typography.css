@@ -16,7 +16,7 @@
     --Links-Color:#FFFF;
     --Modal-Color:#FFFF;
     --Text-Color:#2A2929;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*2- Tpografia Global Body*/
@@ -88,23 +88,24 @@ a{
     }
 
     h2{
-        font-size: 4rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
 
     p{
         /*tamaño de fuente root * 1*/
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 60px;
     }
 
     a{
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 1.5rem;
     }
    
 }
+
 
 
 /*tablets y laptops*/
@@ -113,7 +114,7 @@ a{
     :root{
 
         font-size: 14px;
-        --Title-h2-Color: #F29441;
+        --Title-h2-Color: #fff;
     }
 
     /*3- encabezados o parrafos*/
@@ -162,7 +163,7 @@ a{
     
     :root{
         font-size: 14px;
-        --Title-h2-Color:#4bb1be;
+        --Title-h2-Color:#fff;
 
     }
 
@@ -209,6 +210,7 @@ a{
     h2{
         font-size: 3rem;
         line-height: 44px;
+        margin-top: 50px;
     }
 
     p{

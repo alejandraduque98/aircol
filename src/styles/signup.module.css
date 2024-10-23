@@ -1,3 +1,5 @@
+
+
 .logo{
     position: relative;
     overflow: hidden;
@@ -50,12 +52,13 @@ input{
     }
 
 .iconUser,
-.iconPassword{
+.iconPassword,
+.iconEmail{
     position: absolute;
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
-    width: 60px;
+    width: 65px;
     height: 80px;
     padding-left: 10px;
     background-size: cover;
@@ -66,6 +69,10 @@ input{
 
 .iconUser {
     background-image: url('../Img/Icons/ICO-USER-ME.svg');
+}
+
+.iconEmail{
+    background-image: url('../Img/Icons/ICO-EMAIL-ME.svg');
 }
 
 .iconPassword {
@@ -80,13 +87,11 @@ input{
         font-size: 2rem;
         margin-bottom: 1rem;
         margin-top: 1rem;
-    } 
+    }
 
     .contanerLightSignUp{
-        height:70vh;
-        padding-bottom: 50px;
+        height: 80vh;
     }  
-
 
     .content{
         padding-top: 50px;
@@ -128,7 +133,8 @@ input{
     }
 
     .iconUser,
-    .iconPassword{
+    .iconPassword,
+    .iconEmail{
     /*position: absolute;
     left: 19px;
     top: 50%;
@@ -155,14 +161,12 @@ input{
         padding-bottom: 50px;
     }  
 
-
     .content{
         height: 50vh;
         padding-top: 50px;
         gap: 1rem;
         padding-top: 0px;    
     }
-
 
     .ContainerForm{
         width: 100vw;
@@ -198,7 +202,8 @@ input{
     }
 
     .iconUser,
-    .iconPassword{
+    .iconPassword,
+    .iconEmail{
     /*position: absolute;
     left: 19px;
     top: 50%;
@@ -263,7 +268,9 @@ input{
     }
 
     .iconUser,
-    .iconPassword{
+    .iconPassword,
+    .iconEmail
+    {
     /*position: absolute;
     left: 19px;
     top: 50%;
@@ -327,7 +334,8 @@ input{
     }
     
     .iconUser,
-    .iconPassword{
+    .iconPassword,
+    .iconEmail{
         width: 22px;
         height: 31px;
     }
@@ -343,8 +351,8 @@ input{
 
     .contanerLightSignUp{
         height: auto;
-        padding-bottom: 50px;
     }  
+
 
     .FondoInferior{
         height: 20vh;
@@ -375,7 +383,8 @@ input{
     }
     
     .iconUser,
-    .iconPassword{
+    .iconPassword,
+    .iconEmail{
         position: absolute;
         left: 20px;
         top: 50%;
